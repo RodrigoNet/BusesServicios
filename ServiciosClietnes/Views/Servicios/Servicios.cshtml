@@ -1,0 +1,84 @@
+﻿@using UTIL.Objetos;
+@model ServiciosClietnes.Models.DatepickerModel
+@{
+    ViewBag.Title = "Servicios";
+    List<ObjetoServicios> ListaServicios = ViewBag.GetServicios;
+}
+<script src="~/WebJs/Servicios/Servicios.js"></script>
+
+<div class="panel panel-inverse table-responsive">
+    <div class="panel-heading">
+        <h4 class="panel-title">Listado Servicios</h4>
+        <div class="panel-heading-btn">
+            <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-ng-click="panel-expand"><i class="fa fa-expand"></i></a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-1 col-md-4 col-sm-6 col-xs-12">
+            <br />
+            <label class="col-xs-1 col-form-label">Desde</label>
+        </div>
+        <div class="col-lg-1 col-md-4 col-sm-6 col-xs-12">
+            <br />
+            <input type="date" name="fecha" id="fechaFin" class="controlFecha" />
+        </div>
+        <div class="col-lg-1 col-md-4 col-sm-6 col-xs-12">
+
+        </div>
+        <div class="col-lg-1 col-md-4 col-sm-6 col-xs-12">
+            <br />
+            <label class="col-xs-1 col-form-label">Hasta</label>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12">
+            <br />
+            <input type="date" name="fecha" id="fechaIni" class="controlFecha" />
+        </div>
+        <div class="col-lg-1 col-md-4 col-sm-6 col-xs-12">
+
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <br />
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#VerServicios">Ver Servicios</button>
+        </div>
+
+    </div>
+
+    <div class="row ">
+        <div class="col-11">
+            <br />
+            <div class="panel-heading-btn">
+                <div class="table-responsive table-bordered">
+                    <table id="tableServicios" class="table table-striped" style="background-color:white" width:"95%">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col" class="Idth">#</th>
+                                <th scope="col" class="Vehiculoth">Vehiculo</th>
+                                <th scope="col" class="Horath">Hora</th>
+                                <th scope="col" class="Conductorth">Conductor</th>
+                                <th scope="col" class="Rutath">Ruta</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    @*<div class="table-responsive">
+        @{
+            var grid = new WebGrid(ListaServicios, canPage: false);
+        }
+        @grid.GetHtml(
+       htmlAttributes: new { id = "dataTable" },
+       tableStyle: "table",
+       columns:
+       grid.Columns(
+           grid.Column(columnName: "IdServicio", header: "IdServicio", format: @<text>item.Id</text>)
+         )
+     )
+    </div>*@
+
+</div>

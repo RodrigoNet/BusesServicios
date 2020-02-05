@@ -1,0 +1,8 @@
+C:\Users\RDG\Source\Repos\FttpClientes\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\RDG\Source\Repos\FttpClientes\DAL\bin\Debug\log4net.dll
+C:\Users\RDG\Source\Repos\FttpClientes\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\RDG\Source\Repos\FttpClientes\DAL\bin\Debug\DAL.dll
+C:\Users\RDG\Source\Repos\FttpClientes\DAL\bin\Debug\DAL.pdb
+C:\Users\RDG\Source\Repos\FttpClientes\DAL\obj\Debug\DAL.dll
+C:\Users\RDG\Source\Repos\FttpClientes\DAL\obj\Debug\DAL.pdb
+C:\Users\RDG\Source\Repos\FttpClientes\DAL\obj\Debug\DAL.csprojAssemblyReference.cache

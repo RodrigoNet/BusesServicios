@@ -1,0 +1,154 @@
+﻿@using UTIL.Objetos;
+@{
+    ViewBag.Title = "Usuarios";
+    List<ObjetoUsuario> ListaUsuarios = ViewBag.ListaUsuarios;
+}
+<script src="~/WebJs/Mantenedor/Usuarios/AgregarUsuario.js"></script>
+<link href="~/Content/assets/plugins/danielfarrell/bootstrap-combobox/css/bootstrap-combobox.css" rel="stylesheet" />
+
+<div class="panel panel-inverse table-responsive">
+    <div class="panel-heading">
+        <h4 class="panel-title">Listado Usuarios</h4>
+        <div class="panel-heading-btn">
+            <a href="javascripts:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+        </div>
+    </div>
+
+    <div>
+        <br />
+        <div style="display:flex;align-items:flex-end;justify-content:flex-end;">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#agregarUsuario">Agregar Usuario</button>
+        </div>
+        <br />
+    </div>
+
+    <div class="table-responsive">
+        @{
+            var grid = new WebGrid(ListaUsuarios, canPage: false);
+        }
+        @grid.GetHtml(
+       htmlAttributes: new { id = "dataTable" },
+       tableStyle: "table",
+       columns:
+       grid.Columns(
+           grid.Column(columnName: "IdUsuario", header:"Id", format: @<text>@item.IdUsuario</text>),
+             grid.Column(columnName: "Usuario", header: "Usuario", format: @<text>@item.Usuario</text>),
+                 //grid.Column(columnName: "Editar", header: "Editar", format: @<button class="btn btn-warning btn-m" data-toggle="modal" data-target="#agregarUsuario" onclick="GetUsuario(@item.IdUsuario)">
+                 grid.Column(columnName: "Editar", header: "Editar", format: @<button class="btn btn-warning btn-m" data-toggle="modal" data-target="#modalEditarUsuario" onclick="GetUsuario(@item.IdUsuario)">
+                    Editar<span class="fa fa-pencil"></span>
+                </button>),
+                  grid.Column(columnName: "Eliminar", header: "Eliminar", format: @<button class="btn btn-danger" onclick="EliminarUsuario(@item.IdUsuario)">Eliminar &nbsp;<span class="fa fa-trash"></span></button>)))
+    </div>
+</div>
+
+<div id="agregarUsuario" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="text-primary">Agregar Usuario</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">X</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="x_content">
+                    <br />
+                    <div class="form-horizontal form-label-left input_mask">
+                        <form class="form-horizontal form-bordered">
+                            <div class="form-group row">
+                                <label class="col-xs-2 col-form-label">Usuario</label>
+                                <div class="">
+                                    <input type="text" required class="form form-control has-feedback-left" id="Usuario" name="Usuario" placeholder="Usuario" />
+                                </div>
+                            </div>
+                        </form>
+                        <form class="form-horizontal form-bordered">
+                            <div class="form-group row">
+                                <label class="col-xs-2 col-form-label">Cliente</label>
+                                <div class="">
+                                    @Html.DropDownList("Clientes", (IEnumerable<SelectListItem>)ViewBag.Clientes, "Seleccione...", new { @class = "combobox", @ID = "modClientes", @Name = "modClientes" })
+                                </div>
+                            </div>
+                        </form>
+                        <form class="form-horizontal form-bordered">
+                            <div class="form-group row">
+                                <label class="col-xs-2 col-form-label">Email</label>
+                                <div class="">
+                                    <input type="text" required class="form-control has-feedback-left" id="Email" name="Email" placeholder="email">
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="In-solid"></div>
+                        <div class="form-group">
+                            <div style="display:flex;align-items:flex-end;justify-content:flex-end;">
+                                <button class="btn btn-primary" type="submit" id="CrearUsuario">Grabar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnCerrarModal" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalEditarUsuario" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="text-warning">Modificar Usuario</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">x</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="x_content">
+                    <br />
+                    <div class="form-horizontal form-label-left input_mask">
+                        <form class="form-horizontal form-bordered">
+                            <div class="form-group row">
+                                <label class="col-xs-2 col-form-label">Usuario</label>
+                                <div class="">
+                                    <input type="text" required class="form-control has-feedback-left" id="modUsuario" placeholder="Usuario" />
+                                    <input type="text" style="display:none;" id="IdUsuario" name="IdUsuario" />
+                                </div>
+                            </div>
+                        </form>
+                        <form class="form-horizontal form-bordered">
+                            <div class="form-group row">
+                                <label class="col-xs-2 col-form-label">Cliente</label>
+                                <div class="">
+                                    @Html.DropDownList("Clientes", (IEnumerable<SelectListItem>)ViewBag.Clientes, "Seleccione...", new { @class = "combobox", @ID = "modClientes", @Name = "modClientes" })
+                                </div>
+                            </div>
+                        </form>
+                        <form class="form-horizontal form-bordered">
+                            <div class="form-group row">
+                                <label class="col-xs-2 col-form-label">Email</label>
+                                <div class="">
+                                    <input type="text" required class="form-control has-feedback-left" id="modEmail" name="modEmail" placeholder="email">
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="ln_solid"></div>
+                        <div class="form-group">
+                            <div style="display:flex; align-items:flex-end; justify-content:flex-end;">
+                                <button class="btn btn-warning" type="submit" id="ModificaUsuario" onclick="ModificaUsuario()">Modificar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnCerrarModel" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Content/assets/plugins/danielfarrell/bootstrap-combobox/js/bootstrap-combobox.js"></script>
+
