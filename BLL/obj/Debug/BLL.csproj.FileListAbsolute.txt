@@ -10,3 +10,14 @@ C:\Users\RDG\Source\Repos\FttpClientes\BLL\bin\Debug\UTIL.pdb
 C:\Users\RDG\Source\Repos\FttpClientes\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\RDG\Source\Repos\FttpClientes\BLL\bin\Debug\DAL.dll
 C:\Users\RDG\Source\Repos\FttpClientes\BLL\bin\Debug\DAL.pdb
+C:\Users\Francisco\Desktop\YIYO\BusesServicios\BLL\bin\Debug\BLL.dll
+C:\Users\Francisco\Desktop\YIYO\BusesServicios\BLL\bin\Debug\BLL.pdb
+C:\Users\Francisco\Desktop\YIYO\BusesServicios\BLL\bin\Debug\DAL.dll
+C:\Users\Francisco\Desktop\YIYO\BusesServicios\BLL\bin\Debug\UTIL.dll
+C:\Users\Francisco\Desktop\YIYO\BusesServicios\BLL\bin\Debug\DAL.pdb
+C:\Users\Francisco\Desktop\YIYO\BusesServicios\BLL\bin\Debug\UTIL.pdb
+C:\Users\Francisco\Desktop\YIYO\BusesServicios\BLL\obj\Debug\BLL.dll
+C:\Users\Francisco\Desktop\YIYO\BusesServicios\BLL\obj\Debug\BLL.pdb
+C:\Users\Francisco\Desktop\YIYO\BusesServicios\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\Francisco\Desktop\YIYO\BusesServicios\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Francisco\Desktop\YIYO\BusesServicios\BLL\obj\Debug\BLL.csproj.CopyComplete

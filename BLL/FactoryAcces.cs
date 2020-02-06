@@ -288,7 +288,7 @@ namespace BLL
         #endregion
 
         #region Servicios
-        public List<ObjetoServicios> GetServicios(string cliente, string FechaIni, string FechaFin)
+        public List<ObjetoServicios> GetServicios(int cliente, string FechaIni, string FechaFin)
         {
             var Listado = new List<ObjetoServicios>();
             var data = new Conector().EjecutarSP("Web_GetServicios", new System.Collections.Hashtable()

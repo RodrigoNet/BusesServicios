@@ -51,7 +51,7 @@ namespace BLL
         #endregion
 
         #region Servicios
-        public List<ObjetoServicios> GetServicios(string cliente, string fechaIni, string fechaFin)
+        public List<ObjetoServicios> GetServicios(int cliente, string fechaIni, string fechaFin)
         {
             return Acceso.GetServicios(cliente, fechaIni, fechaFin);
         }

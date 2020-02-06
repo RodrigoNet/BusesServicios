@@ -16,6 +16,10 @@ namespace UTIL.Objetos
 
         public int Id { get => _id; set => _id = value; }
         public DateTime Fecha { get => _fecha; set => _fecha = value; }
+        //
+        //se usa para que js tome bien la fecha
+        public string fechaString { get { return this.Fecha == null ? "" : Fecha.ToString("dd/MM/yyyy"); } }
+        //
         public string Cliente { get => _cliente; set => _cliente = value; }
         public string Ruta { get => _ruta; set => _ruta = value; }
         public string Vehiculo { get => _vehiculo; set => _vehiculo = value; }
