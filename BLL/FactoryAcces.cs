@@ -34,6 +34,9 @@ namespace BLL
                     validador = data.Rows[i].Field<object>("Perfil");
                     datosUsuario.Perfil = validador != null ? data.Rows[i].Field<int>("Perfil") : 0;
 
+                    validador  = data.Rows[i].Field<object>("IdEmpresa");
+                    datosUsuario.IdEmpresa = validador != null ? data.Rows[i].Field<int>("IdEmpresa") : 0;
+
                     validador = data.Rows[i].Field<object>("Verificador");
                     datosUsuario.Verificador = validador != null ? data.Rows[i].Field<bool>("Verificador") : false;
                 }

@@ -66,7 +66,6 @@ C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\obj\Debug\ServiciosClie
 C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\obj\Debug\ServiciosClietnes.pdb
 C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\bin\BLL.dll
 C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\bin\UTIL.dll
-C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\bin\log4net.dll
 C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\bin\BLL.pdb
 C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\bin\UTIL.pdb
 C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\bin\DAL.dll
@@ -147,3 +146,7 @@ C:\Users\Francisco\Desktop\YIYO\BusesServicios\ServiciosClietnes\obj\Debug\Servi
 C:\Users\Francisco\Desktop\YIYO\BusesServicios\ServiciosClietnes\obj\Debug\ServiciosClietnes.csprojAssemblyReference.cache
 C:\Users\Francisco\Desktop\YIYO\BusesServicios\ServiciosClietnes\obj\Debug\ServiciosClietnes.csproj.CoreCompileInputs.cache
 C:\Users\Francisco\Desktop\YIYO\BusesServicios\ServiciosClietnes\obj\Debug\ServiciosClietnes.csproj.CopyComplete
+C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\bin\EntityFramework.dll
+C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\bin\EntityFramework.SqlServer.dll
+C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\bin\EntityFramework.xml
+C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\bin\EntityFramework.SqlServer.xml

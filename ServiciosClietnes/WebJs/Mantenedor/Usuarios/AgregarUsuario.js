@@ -39,8 +39,6 @@
 });
 
 function GetUsuario(IdUsuario) {
-    $("#modClienteundefined").empty();
-
     $.ajax({
         type: "GET",
         url: "GetUsuario",
@@ -55,11 +53,7 @@ function GetUsuario(IdUsuario) {
                         $("#modIdUsuario").val(value.IdUsuario);
                         $("#modUsuario").val(value.Usuario);
                         $("#modEmail").val(value.Email);
-                        $("#modClientes").val(value.IdEmpresa);
-                        document.getElementById("modUsuario").value=value.Usuario;
-                        document.getElementById("IdUsuario").value=value.IdUsuario;
-                        document.getElementById("modClientes").value = value.IdEmpresa;
-                        document.getElementById("modEmail").Value = value.Email;
+                        $("#cliente").val(value.IdEmpresa);
                     });
                 });
             }

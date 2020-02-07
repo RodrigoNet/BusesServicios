@@ -5,7 +5,6 @@ C:\Users\RDG\Source\Repos\FttpClientes\BLL\obj\Debug\BLL.csproj.CoreCompileInput
 C:\Users\RDG\Source\Repos\FttpClientes\BLL\obj\Debug\BLL.dll
 C:\Users\RDG\Source\Repos\FttpClientes\BLL\obj\Debug\BLL.pdb
 C:\Users\RDG\Source\Repos\FttpClientes\BLL\bin\Debug\UTIL.dll
-C:\Users\RDG\Source\Repos\FttpClientes\BLL\bin\Debug\log4net.dll
 C:\Users\RDG\Source\Repos\FttpClientes\BLL\bin\Debug\UTIL.pdb
 C:\Users\RDG\Source\Repos\FttpClientes\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\RDG\Source\Repos\FttpClientes\BLL\bin\Debug\DAL.dll

@@ -1,7 +1,14 @@
 ﻿$(document).ready(function () {
+
     $("#crearTablaServicios").click(function () {
-        var tablaServicios = $("#tablaServicios");
-        var htmlDetalleTabla = "";
+        var tablaServicios = $("#tabla");
+        var htmlDetalleTabla = "<table id='tableServicios' class='table table - striped' style='background - color: white' width:'95 %'>" +
+            "<tr>" +
+            "<th>#</th>" +
+            "<th>Vehiculo</th>" +
+            "<th>Hora</th>" +
+            "<th>Conductor</th>" +
+            "<th>Ruta</th></tr>";
         var fechaIni = $("#fechaIni").val();
         var fechaFin = $("#fechaFin").val();
         $.ajax({
@@ -13,7 +20,6 @@
                 if (data == 0) {
                     alert("Error - Sin Datos")
                 } else {
-                    $("#tablaServicios").html("");
                     $.each(data.list, function (index, value) {
                         htmlDetalleTabla += "<tr>" +
                             "<td>" + value.Id + "</td>" +
@@ -22,19 +28,11 @@
                             "<td>" + value.Vehiculo + "</td>" +
                             "<td>" + value.fechaString + "</td></tr>"; 
                     });
+                    htmlDetalleTabla += "</table>";
                     tablaServicios.append(htmlDetalleTabla);
                 }
             }
         });
     });
 })
-
-$(document).ready(function () {
-    $('#tableServicios').DataTable({
-        searching: false,
-        lengthChange: false,
-        sorting: false,
-        paging: true
-    });
-});
 

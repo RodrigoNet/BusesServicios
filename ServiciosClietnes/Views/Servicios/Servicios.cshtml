@@ -5,7 +5,6 @@
     List<ObjetoServicios> ListaServicios = ViewBag.GetServicios;
 }
 <script src="~/WebJs/Servicios/Servicios.js"></script>
-
 <div class="panel panel-inverse table-responsive">
     <div class="panel-heading">
         <h4 class="panel-title">Listado Servicios</h4>
@@ -39,20 +38,7 @@
         <div class="col-12">
             <br />
             <div class="panel-heading-btn">
-                <div class="table-responsive table-bordered">
-                    <table id="tableServicios" class="table table-striped" style="background-color:white" width:"95%">
-                        <thead class="thead-light">
-                            <tr>
-                                <th>#</th>
-                                <th>Vehiculo</th>
-                                <th>Hora</th>
-                                <th>Conductor</th>
-                                <th>Ruta</th>
-                            </tr>
-                        </thead>
-                        <tbody id="tablaServicios">
-                        </tbody>
-                    </table>
+                <div class="table-responsive table-bordered" id="tabla">
                 </div>
             </div>
         </div>
