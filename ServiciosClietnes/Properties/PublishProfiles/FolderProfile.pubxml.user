@@ -16,22 +16,31 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/10/2013 15:29:20</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>01/28/2020 17:51:29</publishTime>
+      <publishTime>02/07/2020 18:18:37</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>01/28/2020 17:51:29</publishTime>
+      <publishTime>02/07/2020 18:18:37</publishTime>
     </File>
     <File Include="bin/BLL.dll">
-      <publishTime>01/28/2020 17:51:01</publishTime>
+      <publishTime>02/07/2020 18:11:53</publishTime>
     </File>
     <File Include="bin/BLL.pdb">
-      <publishTime>01/28/2020 17:51:01</publishTime>
+      <publishTime>02/07/2020 18:11:53</publishTime>
     </File>
     <File Include="bin/DAL.dll">
-      <publishTime>01/27/2020 13:51:44</publishTime>
+      <publishTime>02/07/2020 18:11:53</publishTime>
     </File>
     <File Include="bin/DAL.pdb">
-      <publishTime>01/27/2020 13:51:44</publishTime>
+      <publishTime>02/07/2020 18:11:53</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>06/07/2018 10:03:48</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>06/07/2018 10:03:48</publishTime>
+    </File>
+    <File Include="bin/EPPlus.dll">
+      <publishTime>01/30/2020 07:13:00</publishTime>
     </File>
     <File Include="bin/log4net.dll">
       <publishTime>01/03/2020 21:49:14</publishTime>
@@ -127,10 +136,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/24/2018 12:38:22</publishTime>
     </File>
     <File Include="bin/ServiciosClietnes.dll">
-      <publishTime>01/28/2020 17:51:04</publishTime>
+      <publishTime>02/07/2020 18:18:19</publishTime>
     </File>
     <File Include="bin/ServiciosClietnes.pdb">
-      <publishTime>01/28/2020 17:51:04</publishTime>
+      <publishTime>02/07/2020 18:18:19</publishTime>
     </File>
     <File Include="bin/System.Diagnostics.DiagnosticSource.dll">
       <publishTime>07/19/2017 09:01:30</publishTime>
@@ -166,10 +175,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/01/2018 12:20:56</publishTime>
     </File>
     <File Include="bin/UTIL.dll">
-      <publishTime>01/27/2020 13:51:44</publishTime>
+      <publishTime>02/07/2020 18:11:53</publishTime>
     </File>
     <File Include="bin/UTIL.pdb">
-      <publishTime>01/27/2020 13:51:44</publishTime>
+      <publishTime>02/07/2020 18:11:53</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>01/23/2014 13:57:34</publishTime>
@@ -7131,6 +7140,129 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/Site.css">
       <publishTime>01/21/2020 10:33:33</publishTime>
     </File>
+    <File Include="Content/themes/base/accordion.css">
+      <publishTime>01/29/2020 14:31:54</publishTime>
+    </File>
+    <File Include="Content/themes/base/all.css">
+      <publishTime>01/29/2020 14:31:54</publishTime>
+    </File>
+    <File Include="Content/themes/base/autocomplete.css">
+      <publishTime>01/29/2020 14:31:54</publishTime>
+    </File>
+    <File Include="Content/themes/base/base.css">
+      <publishTime>01/29/2020 14:31:54</publishTime>
+    </File>
+    <File Include="Content/themes/base/button.css">
+      <publishTime>01/29/2020 14:31:54</publishTime>
+    </File>
+    <File Include="Content/themes/base/core.css">
+      <publishTime>01/29/2020 14:31:54</publishTime>
+    </File>
+    <File Include="Content/themes/base/datepicker.css">
+      <publishTime>01/29/2020 14:31:54</publishTime>
+    </File>
+    <File Include="Content/themes/base/dialog.css">
+      <publishTime>01/29/2020 14:31:54</publishTime>
+    </File>
+    <File Include="Content/themes/base/draggable.css">
+      <publishTime>01/29/2020 14:31:54</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>01/29/2020 14:31:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>01/29/2020 14:31:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>01/29/2020 14:31:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>01/29/2020 14:31:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>01/29/2020 14:31:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>01/29/2020 14:31:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>01/29/2020 14:31:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>01/29/2020 14:31:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_222222_256x240.png">
+      <publishTime>01/29/2020 14:31:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>01/29/2020 14:31:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_444444_256x240.png">
+      <publishTime>01/29/2020 14:31:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_454545_256x240.png">
+      <publishTime>01/29/2020 14:31:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_555555_256x240.png">
+      <publishTime>01/29/2020 14:31:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_777620_256x240.png">
+      <publishTime>01/29/2020 14:31:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_777777_256x240.png">
+      <publishTime>01/29/2020 14:31:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_888888_256x240.png">
+      <publishTime>01/29/2020 14:31:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_cc0000_256x240.png">
+      <publishTime>01/29/2020 14:31:52</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>01/29/2020 14:31:52</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_ffffff_256x240.png">
+      <publishTime>01/29/2020 14:31:52</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery-ui.css">
+      <publishTime>01/29/2020 14:31:52</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery-ui.min.css">
+      <publishTime>01/29/2020 14:31:52</publishTime>
+    </File>
+    <File Include="Content/themes/base/menu.css">
+      <publishTime>01/29/2020 14:31:52</publishTime>
+    </File>
+    <File Include="Content/themes/base/progressbar.css">
+      <publishTime>01/29/2020 14:31:52</publishTime>
+    </File>
+    <File Include="Content/themes/base/resizable.css">
+      <publishTime>01/29/2020 14:31:52</publishTime>
+    </File>
+    <File Include="Content/themes/base/selectable.css">
+      <publishTime>01/29/2020 14:31:51</publishTime>
+    </File>
+    <File Include="Content/themes/base/selectmenu.css">
+      <publishTime>01/29/2020 14:31:51</publishTime>
+    </File>
+    <File Include="Content/themes/base/slider.css">
+      <publishTime>01/29/2020 14:31:51</publishTime>
+    </File>
+    <File Include="Content/themes/base/sortable.css">
+      <publishTime>01/29/2020 14:31:51</publishTime>
+    </File>
+    <File Include="Content/themes/base/spinner.css">
+      <publishTime>01/29/2020 14:31:51</publishTime>
+    </File>
+    <File Include="Content/themes/base/tabs.css">
+      <publishTime>01/29/2020 14:31:51</publishTime>
+    </File>
+    <File Include="Content/themes/base/theme.css">
+      <publishTime>01/29/2020 14:31:51</publishTime>
+    </File>
+    <File Include="Content/themes/base/tooltip.css">
+      <publishTime>01/29/2020 14:31:51</publishTime>
+    </File>
     <File Include="favicon.ico">
       <publishTime>01/21/2020 10:33:33</publishTime>
     </File>
@@ -7149,8 +7281,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="fonts/glyphicons-halflings-regular.woff2">
       <publishTime>01/21/2020 10:33:53</publishTime>
     </File>
+    <File Include="Models/Servicios.edmx.diagram">
+      <publishTime>02/03/2020 19:25:01</publishTime>
+    </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>01/28/2020 17:51:17</publishTime>
+      <publishTime>02/07/2020 18:18:27</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>01/21/2020 10:33:53</publishTime>
@@ -7176,6 +7311,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/jquery-3.3.1.slim.min.map">
       <publishTime>01/21/2020 10:33:54</publishTime>
     </File>
+    <File Include="Scripts/jquery-ui-1.12.1.js">
+      <publishTime>01/29/2020 14:31:50</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.12.1.min.js">
+      <publishTime>01/29/2020 14:31:50</publishTime>
+    </File>
     <File Include="Scripts/jquery.validate.js">
       <publishTime>01/21/2020 10:34:05</publishTime>
     </File>
@@ -7195,19 +7336,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/21/2020 21:11:13</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>01/22/2020 10:52:06</publishTime>
+      <publishTime>01/28/2020 23:23:56</publishTime>
     </File>
     <File Include="Views/Login/Login.cshtml">
       <publishTime>01/22/2020 02:01:06</publishTime>
+    </File>
+    <File Include="Views/Servicios/Servicios.cshtml">
+      <publishTime>02/07/2020 18:00:43</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>01/21/2020 10:33:33</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>01/27/2020 12:27:06</publishTime>
+      <publishTime>01/30/2020 00:08:09</publishTime>
     </File>
     <File Include="Views/Usuarios/Usuarios.cshtml">
-      <publishTime>01/28/2020 17:32:36</publishTime>
+      <publishTime>02/07/2020 01:36:04</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>01/21/2020 10:33:33</publishTime>
@@ -7216,16 +7360,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/21/2020 10:33:33</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/27/2020 13:51:53</publishTime>
+      <publishTime>02/07/2020 18:12:00</publishTime>
     </File>
     <File Include="WebJs/Base.js">
-      <publishTime>01/22/2020 02:05:02</publishTime>
+      <publishTime>02/07/2020 01:04:02</publishTime>
     </File>
     <File Include="WebJs/Login/Login.js">
       <publishTime>01/22/2020 10:46:58</publishTime>
     </File>
     <File Include="WebJs/Mantenedor/Usuarios/AgregarUsuario.js">
-      <publishTime>01/28/2020 17:50:07</publishTime>
+      <publishTime>02/07/2020 01:43:45</publishTime>
+    </File>
+    <File Include="WebJs/Servicios/Servicios.js">
+      <publishTime>02/07/2020 18:08:15</publishTime>
     </File>
   </ItemGroup>
 </Project>

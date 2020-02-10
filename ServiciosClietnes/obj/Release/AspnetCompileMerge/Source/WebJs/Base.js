@@ -1,4 +1,15 @@
 ﻿
+$(function controlFecha() {
+    $(".datepicker").datepicker({
+        dateFormat: "dd-mm-yy",
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "-3:+3",
+        showOn: "both",
+        buttonText: "<i class='fa fa-calendar'></i>"
+    });
+});
+
 function agregarSeparadorMiles(numero, caracterSeparador, caracterDecimal) {
     caracterSeparador = caracterSeparador === undefined || caracterSeparador === null ? "," : caracterSeparador;
 
@@ -269,10 +280,6 @@ function desactivarLoadingBoton(id) {
     $("#" + id).html(____botonesLoading.find(m => m.id === id).htmlOriginal);
     $("#" + id).removeAttr("disabled");
 }
-
-
-
-
 
 
 function formatearNumero(numero, simboloAntes, valorDefecto) {

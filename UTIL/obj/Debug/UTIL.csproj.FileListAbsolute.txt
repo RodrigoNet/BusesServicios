@@ -3,9 +3,9 @@ C:\Users\RDG\Source\Repos\FttpClientes\UTIL\bin\Debug\UTIL.pdb
 C:\Users\RDG\Source\Repos\FttpClientes\UTIL\obj\Debug\UTIL.csproj.CoreCompileInputs.cache
 C:\Users\RDG\Source\Repos\FttpClientes\UTIL\obj\Debug\UTIL.dll
 C:\Users\RDG\Source\Repos\FttpClientes\UTIL\obj\Debug\UTIL.pdb
-C:\Users\RDG\Source\Repos\FttpClientes\UTIL\obj\Debug\UTIL.csprojAssemblyReference.cache
 C:\Users\Francisco\Desktop\YIYO\BusesServicios\UTIL\obj\Debug\UTIL.dll
 C:\Users\Francisco\Desktop\YIYO\BusesServicios\UTIL\obj\Debug\UTIL.pdb
 C:\Users\Francisco\Desktop\YIYO\BusesServicios\UTIL\bin\Debug\UTIL.dll
 C:\Users\Francisco\Desktop\YIYO\BusesServicios\UTIL\bin\Debug\UTIL.pdb
 C:\Users\Francisco\Desktop\YIYO\BusesServicios\UTIL\obj\Debug\UTIL.csproj.CoreCompileInputs.cache
+C:\Users\RDG\Source\Repos\FttpClientes\UTIL\obj\Debug\UTIL.csprojAssemblyReference.cache

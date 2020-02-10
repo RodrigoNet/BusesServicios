@@ -150,3 +150,6 @@ C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\bin\EntityFramework.dll
 C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\bin\EntityFramework.SqlServer.dll
 C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\bin\EntityFramework.xml
 C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\bin\EntityFramework.SqlServer.xml
+C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\bin\EPPlus.dll
+C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\bin\EPPlus.xml
+C:\Users\RDG\Source\Repos\FttpClientes\ServiciosClietnes\bin\log4net.dll

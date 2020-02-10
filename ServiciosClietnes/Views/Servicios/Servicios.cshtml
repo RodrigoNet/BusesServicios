@@ -1,10 +1,14 @@
-﻿@using UTIL.Objetos;
+﻿@using UTIL
+@using UTIL.Objetos
 @model ServiciosClietnes.Models.DatepickerModel
 @{
     ViewBag.Title = "Servicios";
     List<ObjetoServicios> ListaServicios = ViewBag.GetServicios;
 }
 <script src="~/WebJs/Servicios/Servicios.js"></script>
+
+<center><h1 style="color:white">@SessionVariables.Session_Datos_Usuarios.Empresa</h1></center>
+
 <div class="panel panel-inverse table-responsive">
     <div class="panel-heading">
         <h4 class="panel-title">Listado Servicios</h4>
@@ -18,20 +22,13 @@
             <br />
             <label class="col-xs-1 col-form-label">Desde</label>
             <input type="date" name="fecha" id="fechaIni" class="controlFecha" />
-        </div>
-
-        <div class="col-lg-12">
-            <br />
             <label class="col-xs-1 col-form-label">Hasta</label>
             <input type="date" name="fecha" id="fechaFin" class="controlFecha" />
-        </div>
-
-        <div class="col-lg-3">
-            <br />
+            
             <button type="button" class="btn btn-primary" id="crearTablaServicios">Ver Servicios</button>
-            <button type="button" class="btn btn-success" id="exportarExcel">Exportar Excel</button>
+            
+            <button class="btn btn-success" onclick="descargaExcel()">Exportar excel <i class="fa fa-file-excel-o" aria-hidden="true"></i></button>
         </div>
-
     </div>
 
     <div class="container">

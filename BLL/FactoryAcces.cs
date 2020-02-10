@@ -39,6 +39,9 @@ namespace BLL
 
                     validador = data.Rows[i].Field<object>("Verificador");
                     datosUsuario.Verificador = validador != null ? data.Rows[i].Field<bool>("Verificador") : false;
+
+                    validador = data.Rows[i].Field<object>("Cliente");
+                    datosUsuario.Empresa = validador != null ? data.Rows[i].Field<string>("Cliente") : "NO ASIGNADO";
                 }
             }
             else
@@ -321,6 +324,12 @@ namespace BLL
 
                     validador = data.Rows[i].Field<object>("Fecha");
                     dtLista.Fecha = validador != null ? data.Rows[i].Field<DateTime>("Fecha") : DateTime.Now;
+
+                    validador = data.Rows[i].Field<object>("Conductor");
+                    dtLista.Conductor = validador != null ? data.Rows[i].Field<string>("Conductor") : "NO ASIGNADO";
+
+                    validador = data.Rows[i].Field<object>("HoraIni");
+                    dtLista.Hora = validador != null ? data.Rows[i].Field<string>("HoraIni") : "NO ASIGNADO";
 
                     Listado.Add(dtLista);
                 }

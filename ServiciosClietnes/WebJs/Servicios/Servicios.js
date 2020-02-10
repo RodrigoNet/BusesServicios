@@ -5,10 +5,12 @@
         var htmlDetalleTabla = "<table id='tableServicios' class='table table - striped' style='background - color: white' width:'95 %'>" +
             "<tr>" +
             "<th>#</th>" +
-            "<th>Vehiculo</th>" +
+            "<th>Fecha</th>" +
             "<th>Hora</th>" +
+            "<th>Cliente</th>" +
             "<th>Conductor</th>" +
-            "<th>Ruta</th></tr>";
+            "<th>Ruta</th>" +
+            "<th>Vehiculo</th></tr>";
         var fechaIni = $("#fechaIni").val();
         var fechaFin = $("#fechaFin").val();
         $.ajax({
@@ -23,10 +25,12 @@
                     $.each(data.list, function (index, value) {
                         htmlDetalleTabla += "<tr>" +
                             "<td>" + value.Id + "</td>" +
+                            "<td>" + value.fechaString + "</td>" +
+                            "<td>" + value.Hora + "</td>" +
                             "<td>" + value.Cliente + "</td>" +
+                            "<td>" + value.Conductor + "</td>" +
                             "<td>" + value.Ruta + "</td>" +
-                            "<td>" + value.Vehiculo + "</td>" +
-                            "<td>" + value.fechaString + "</td></tr>"; 
+                            "<td>" + value.Vehiculo + "</td>"; 
                     });
                     htmlDetalleTabla += "</table>";
                     tablaServicios.append(htmlDetalleTabla);
@@ -35,4 +39,16 @@
         });
     });
 })
+
+function descargaExcel() {
+    
+    var fechaIni = $("#fechaIni").val();
+    var fechaFin= $("#fechaFin").val();
+    if (fechaIni != '') {
+        window.location = 'descargaExcel?fechaini=' + fechaIni + '&fechafin=' + fechaFin;
+    } else {
+        alert(data.mensajeError);
+        return false;
+    }
+}
 

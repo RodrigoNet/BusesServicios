@@ -39,8 +39,6 @@
 });
 
 function GetUsuario(IdUsuario) {
-    $("#modClienteundefined").empty();
-
     $.ajax({
         type: "GET",
         url: "GetUsuario",
@@ -55,17 +53,13 @@ function GetUsuario(IdUsuario) {
                         $("#modIdUsuario").val(value.IdUsuario);
                         $("#modUsuario").val(value.Usuario);
                         $("#modEmail").val(value.Email);
-                        $("#modClientes").val(value.IdEmpresa)
-                        document.getElementById("modUsuario").value=value.Usuario;
-                        document.getElementById("modClientes").value = value.IdEmpresa;
-                        document.getElementById("modEmail").Value = value.Email;
+                        $("#cliente").val(value.IdEmpresa);
                     });
                 });
             }
          }
     });
 }
-
 
 function EliminarUsuario(IdUsuario) {
     abrirConfirmacion('Eliminar', 'Desea eliminar Usuario?', function (){
@@ -87,11 +81,12 @@ function EliminarUsuario(IdUsuario) {
 function ModificaUsuario() {
     var Id = $("#modIdUsuario").val();
     var usuario = $("modUsuario").val();
-    var cliente = $("modCliente").val();
+    var cliente = $("modClientes").val();
+    var email = $("modEmail").val();
     $.ajax({
         type: "POST",
         url: "ModificarUsuario",
-        data: { _IdUsuario: Id, _Usuario: usuario, _Cleinte: cliente },
+        data: { _IdUsuario: Id, _Usuario: usuario, _Cliente: cliente, _Email:email},
         async: true,
         success: function (data) {
             if (date == 1) {
