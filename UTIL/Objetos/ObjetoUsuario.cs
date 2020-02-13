@@ -18,6 +18,7 @@ namespace UTIL.Objetos
         private string _Usuario;
         private string _email;
         private int _idempresa;
+        private string _clave;
 
         public string Nombre { get => _nombre; set => _nombre = value; }
         public string Rut { get => _rut; set => _rut = value; }
@@ -29,5 +30,6 @@ namespace UTIL.Objetos
         public string Usuario { get => _Usuario; set => _Usuario = value; }
         public string Email { get => _email; set => _email = value; }
         public int IdEmpresa { get => _idempresa; set => _idempresa = value; }
+        public string Clave { get => _clave; set => _clave = value; }
     }
 }

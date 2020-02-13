@@ -66,7 +66,7 @@
                             <div class="form-group row">
                                 <label class="col-xs-2 col-form-label">Cliente</label>
                                 <div class="">
-                                    @Html.DropDownList("Clientes", (IEnumerable<SelectListItem>)ViewBag.Clientes, "Seleccione...", new { @class = "combobox", @ID = "modClientes", @Name = "modClientes" })
+                                    @Html.DropDownList("Clientes", (IEnumerable<SelectListItem>)ViewBag.Clientes, "Seleccione...", new { @class = "combobox", @ID = "Clientes", @Name = "Clientes" })
                                 </div>
                             </div>
                         </form>
@@ -113,7 +113,7 @@
                                 <label class="col-xs-2 col-form-label">Usuario</label>
                                 <div class="">
                                     <input type="text" required class="form-control has-feedback-left" id="modUsuario" placeholder="Usuario" />
-                                    <input type="text" style="display:none;" id="IdUsuario" name="IdUsuario" />
+                                    <input type="text" style="display:none;" id="modIdUsuario" name="IdUsuario" />
                                 </div>
                             </div>
                         </form>
@@ -121,7 +121,7 @@
                             <div class="form-group row">
                                 <label class="col-xs-2 col-form-label">Cliente</label>
                                 <div class="">
-                                    @Html.DropDownList("cliente", (IEnumerable<SelectListItem>)ViewBag.Clientes, "Seleccione...", new { @class = "combobox", @ID = "cliente", @Name = "cliente" })
+                                    @Html.DropDownList("modClientes", (IEnumerable<SelectListItem>)ViewBag.Clientes, "Seleccione...", new { @class = "combobox", @ID = "modClientes", @Name = "modClientes" })
                                 </div>
                             </div>
                         </form>

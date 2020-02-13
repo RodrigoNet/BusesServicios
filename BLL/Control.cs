@@ -48,6 +48,11 @@ namespace BLL
         {
             return Acceso.EliminarUsuario(usuario);
         }
+
+        public RespuestaModel ModificarClave(ObjetoUsuario usuario)
+        {
+            return Acceso.ModificarClave(usuario);
+        }
         #endregion
 
         #region Servicios

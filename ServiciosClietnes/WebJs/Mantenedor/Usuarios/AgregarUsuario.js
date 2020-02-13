@@ -1,5 +1,4 @@
 ﻿$(document).ready(function(){
-    //$('.combobox').combobox();
 
     document.getElementById("CrearUsuario").onclick = function () {
         
@@ -80,9 +79,10 @@ function EliminarUsuario(IdUsuario) {
 
 function ModificaUsuario() {
     var Id = $("#modIdUsuario").val();
-    var usuario = $("modUsuario").val();
-    var cliente = $("modClientes").val();
-    var email = $("modEmail").val();
+    var usuario = $("#modUsuario").val();
+    var cliente = $("#modClientes").val();
+    var email = $("#modEmail").val();
+    console.log("modificausuario");
     $.ajax({
         type: "POST",
         url: "ModificarUsuario",
@@ -102,4 +102,5 @@ function ModificaUsuario() {
         }
     });
 }
+
 

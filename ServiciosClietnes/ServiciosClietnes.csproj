@@ -2559,6 +2559,7 @@
     <Content Include="Content\assets\plugins\slimscroll\package.json" />
     <Content Include="Content\assets\plugins\slimscroll\README.md" />
     <Content Include="WebJs\Mantenedor\Usuarios\AgregarUsuario.js" />
+    <Content Include="WebJs\Mantenedor\Usuarios\CambiarClave.js" />
     <Content Include="WebJs\Servicios\Servicios.js" />
     <EntityDeploy Include="Models\Servicios.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -2595,11 +2596,10 @@
     <Content Include="Views\Error\SesionExpirada.cshtml" />
     <Content Include="Views\Usuarios\Usuarios.cshtml" />
     <Content Include="Views\Servicios\Servicios.cshtml" />
-    <Content Include="Views\Usuarios\CambioPassword.cshtml" />
+    <Content Include="Views\ChangePassword\CambioPassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\ChangePassword\" />
     <Folder Include="Views\ExportExcel\" />
   </ItemGroup>
   <ItemGroup>
