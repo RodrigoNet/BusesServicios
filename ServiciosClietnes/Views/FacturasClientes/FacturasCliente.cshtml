@@ -1,0 +1,77 @@
+﻿@using UTIL
+@using UTIL.Objetos
+@{
+    ViewBag.Title = "FacturasCliente";
+    List<ObjetoServicios> ListaServicios = ViewBag.GetServicios;
+}
+<script src="~/WebJs/Facturacion/Facturacion.js"></script>
+<script>
+    $(document).ready(function () {
+        n = new Date();
+        y = n.getFullYear();   //Año
+        m = n.getMonth() + 1;  //Mes
+        mm = n.getMonth() + 1;  //Mes
+        d = n.getDate();       //Día
+        if (d < 10)
+            d = '0' + d;
+        if (m < 10)
+            m = '0' + m;
+        if (mm < 10)
+            mm = '0' + mm;
+        //Lo ordenas a gusto.
+        document.getElementById('fechaIni').value = y + "-" + m + "-" + d;
+        document.getElementById('fechaFin').value = y + "-" + mm + "-" + d;
+    });
+</script>
+
+<center><h1 style="color:white">@SessionVariables.Session_Datos_Usuarios.Empresa</h1></center>
+
+<div class="panel panel-inverse table-responsive">
+
+    <h2>Facturas Cliente</h2>
+
+    <div class="panel-heading">
+        <h4 class="panel-title">Listado Facturas</h4>
+        <div class="panel-heading-btn">
+            <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-ng-click="panel-expand"><i class="fa fa-expand"></i></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <input type="text" style="display:none" id="Cliente" name="Cliente" placeholder="Cliente" required value=@SessionVariables.Session_Datos_Usuarios.IdEmpresa>
+        <div class="col-lg-12">
+            <br />
+            <label class="col-xs-1 col-form-label">Desde</label>
+            <input type="date" name="fecha" id="fechaIni" class="controlFecha" min="2018-01-01" max="2023-01-01" value="" />
+            <label class="col-xs-1 col-form-label">Hasta</label>
+            <input type="date" name="fecha" id="fechaFin" class="controlFecha" min="2018-01-01" max="2023-01-01" value="" />
+
+            <button type="button" class="btn btn-primary" id="crearTablaFacturas">Ver Facturas</button>
+
+            <button class="btn btn-success" onclick="descargaExcel()">Exportar excel <i class="fa fa-file-excel-o" aria-hidden="true"></i></button>
+            <button class="btn btn-success" onclick="crearPdf()">Exporta Pdf <i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-12">
+            <br />
+            <div class="panel-heading-btn">
+                <div class="table-responsive table-bordered" id="tabla">
+                    <table id='dataTableDoc' class='table table-striped' style='background-color: white' width:'95 %'>
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Nro Factura</th>
+                                <th>Fecha</th>
+                                <th>Monto</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

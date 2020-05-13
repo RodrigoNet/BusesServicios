@@ -4,7 +4,7 @@
         
         var usuario = $("#Usuario").val();
         var email = $("#Email").val();
-        var cliente = $("#modClientes").val();
+        var cliente = $("#Clientes").val();
 
         $.ajax({
             type: "POST",
@@ -14,15 +14,6 @@
             success: function (data) {
                 try {
                     if (data > 0) {
-                        //if (!data.Verificador) {
-                        //    $("#modalErrorLoginMensaje").html(data.Mensaje);
-                        //    $("#aModalErrorLogin").click();
-                        //    return;
-                        //}
-                        //else {
-                        //    $("#modalErrorLoginMensaje").html(data.Mensaje);
-                        //    $("#aModalErrorLogin").click();
-                        //}
                         alert("usuario creado");
                         location.reload();
                     }

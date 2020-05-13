@@ -4,3 +4,9 @@ C:\Users\RDG\Source\Repos\FttpClientes\UTIL\obj\Release\UTIL.csprojAssemblyRefer
 C:\Users\RDG\Source\Repos\FttpClientes\UTIL\obj\Release\UTIL.csproj.CoreCompileInputs.cache
 C:\Users\RDG\Source\Repos\FttpClientes\UTIL\obj\Release\UTIL.dll
 C:\Users\RDG\Source\Repos\FttpClientes\UTIL\obj\Release\UTIL.pdb
+D:\FttpWeb\FttpClientes\UTIL\bin\Release\UTIL.dll
+D:\FttpWeb\FttpClientes\UTIL\bin\Release\UTIL.pdb
+D:\FttpWeb\FttpClientes\UTIL\obj\Release\UTIL.csprojAssemblyReference.cache
+D:\FttpWeb\FttpClientes\UTIL\obj\Release\UTIL.csproj.CoreCompileInputs.cache
+D:\FttpWeb\FttpClientes\UTIL\obj\Release\UTIL.dll
+D:\FttpWeb\FttpClientes\UTIL\obj\Release\UTIL.pdb

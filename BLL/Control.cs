@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using UTIL.Objetos;
 
 namespace BLL
@@ -62,5 +58,11 @@ namespace BLL
         }
         #endregion
 
+        #region FacturasClientes
+        public List<ObjetoFacturas> GetFacturas(int cliente, string FechaIni, string FEchaFin)
+        {
+            return Acceso.GetFacturas(cliente, FechaIni, FEchaFin);
+        }
+        #endregion
     }
 }

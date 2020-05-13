@@ -6,3 +6,11 @@ C:\Users\RDG\Source\Repos\FttpClientes\DAL\obj\Release\DAL.csproj.CoreCompileInp
 C:\Users\RDG\Source\Repos\FttpClientes\DAL\obj\Release\DAL.csproj.CopyComplete
 C:\Users\RDG\Source\Repos\FttpClientes\DAL\obj\Release\DAL.dll
 C:\Users\RDG\Source\Repos\FttpClientes\DAL\obj\Release\DAL.pdb
+D:\FttpWeb\FttpClientes\DAL\bin\Release\DAL.dll
+D:\FttpWeb\FttpClientes\DAL\bin\Release\DAL.pdb
+D:\FttpWeb\FttpClientes\DAL\bin\Release\log4net.dll
+D:\FttpWeb\FttpClientes\DAL\obj\Release\DAL.csprojAssemblyReference.cache
+D:\FttpWeb\FttpClientes\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
+D:\FttpWeb\FttpClientes\DAL\obj\Release\DAL.csproj.CopyComplete
+D:\FttpWeb\FttpClientes\DAL\obj\Release\DAL.dll
+D:\FttpWeb\FttpClientes\DAL\obj\Release\DAL.pdb

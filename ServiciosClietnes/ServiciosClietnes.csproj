@@ -152,6 +152,7 @@
     <Compile Include="Controllers\ChangePasswordController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\ExportExcelController.cs" />
+    <Compile Include="Controllers\FacturasClientesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ServiciosController.cs" />
@@ -2470,6 +2471,7 @@
     <Content Include="Scripts\jquery-ui-1.12.1.js" />
     <Content Include="Scripts\jquery-ui-1.12.1.min.js" />
     <Content Include="WebJs\Base.js" />
+    <Content Include="WebJs\Facturacion\Facturacion.js" />
     <Content Include="WebJs\Login\Login.js" />
     <Content Include="Content\assets\plugins\bootstrap\css\bootstrap-grid.css.map" />
     <Content Include="Content\assets\plugins\bootstrap\css\bootstrap-grid.min.css.map" />
@@ -2597,6 +2599,7 @@
     <Content Include="Views\Usuarios\Usuarios.cshtml" />
     <Content Include="Views\Servicios\Servicios.cshtml" />
     <Content Include="Views\ChangePassword\CambioPassword.cshtml" />
+    <Content Include="Views\FacturasClientes\FacturasCliente.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -6,7 +6,24 @@
     List<ObjetoServicios> ListaServicios = ViewBag.GetServicios;
 }
 <script src="~/WebJs/Servicios/Servicios.js"></script>
-
+<script>
+    $(document).ready(function () {
+        n = new Date();        
+        y = n.getFullYear();   //Año     
+        m = n.getMonth() + 1;  //Mes 
+        mm = n.getMonth() + 1;  //Mes
+        d = n.getDate();       //Día
+        if (d < 10)
+            d = '0' + d;
+        if (m < 10)
+            m = '0' + m;
+        if (mm < 10)
+            mm = '0' + mm;
+        //Lo ordenas a gusto.
+        document.getElementById('fechaIni').value = y + "-" + m + "-" + d;
+        document.getElementById('fechaFin').value = y + "-" + mm + "-" + d;
+    });
+</script>
 <center><h1 style="color:white">@SessionVariables.Session_Datos_Usuarios.Empresa</h1></center>
 
 <div class="panel panel-inverse table-responsive">
@@ -21,13 +38,14 @@
         <div class="col-lg-12">
             <br />
             <label class="col-xs-1 col-form-label">Desde</label>
-            <input type="date" name="fecha" id="fechaIni" class="controlFecha" />
+            <input type="date" name="fecha" id="fechaIni" class="controlFecha" min="2018-01-01" max="2023-01-01" value="" />
             <label class="col-xs-1 col-form-label">Hasta</label>
-            <input type="date" name="fecha" id="fechaFin" class="controlFecha" />
-            
+            <input type="date" name="fecha" id="fechaFin" class="controlFecha" min="2018-01-01" max="2023-01-01" value="" />
+
             <button type="button" class="btn btn-primary" id="crearTablaServicios">Ver Servicios</button>
-            
+
             <button class="btn btn-success" onclick="descargaExcel()">Exportar excel <i class="fa fa-file-excel-o" aria-hidden="true"></i></button>
+            <button class="btn btn-success" onclick="crearPdf()">Exporta Pdf <i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
         </div>
     </div>
 
@@ -36,6 +54,22 @@
             <br />
             <div class="panel-heading-btn">
                 <div class="table-responsive table-bordered" id="tabla">
+                    <table id='dataTable' class='table table-striped' style='background-color: white' width:'95 %'>
+                        <thead>
+                            <tr>
+                                <th width="20%">Nro Servicio</th>
+                                <th>Fecha</th>
+                                <th>Hora</th>
+                                <th>Cliente</th>
+                                <th>Conductor</th>
+                                <th>Ruta</th>
+                                <th>Vehiculo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

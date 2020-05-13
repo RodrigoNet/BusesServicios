@@ -32,12 +32,11 @@
        columns:
        grid.Columns(
            grid.Column(columnName: "IdUsuario", header:"Id", format: @<text>@item.IdUsuario</text>),
-             grid.Column(columnName: "Usuario", header: "Usuario", format: @<text>@item.Usuario</text>),
-                 //grid.Column(columnName: "Editar", header: "Editar", format: @<button class="btn btn-warning btn-m" data-toggle="modal" data-target="#agregarUsuario" onclick="GetUsuario(@item.IdUsuario)">
-                 grid.Column(columnName: "Editar", header: "Editar", format: @<button class="btn btn-warning btn-m" data-toggle="modal" data-target="#modalEditarUsuario" onclick="GetUsuario(@item.IdUsuario)">
-                    Editar<span class="fa fa-pencil"></span>
-                </button>),
-                  grid.Column(columnName: "Eliminar", header: "Eliminar", format: @<button class="btn btn-danger" onclick="EliminarUsuario(@item.IdUsuario)">Eliminar &nbsp;<span class="fa fa-trash"></span></button>)))
+           grid.Column(columnName: "Usuario", header: "Usuario", format: @<text>@item.Usuario</text>),
+           grid.Column(columnName: "Editar", header: "Editar", format: @<button class="btn btn-warning btn-m" data-toggle="modal" data-target="#modalEditarUsuario" onclick="GetUsuario(@item.IdUsuario)">
+           Editar<span class="fa fa-pencil"></span>
+           </button>),
+           grid.Column(columnName: "Eliminar", header: "Eliminar", format: @<button class="btn btn-danger" onclick="EliminarUsuario(@item.IdUsuario)">Eliminar &nbsp;<span class="fa fa-trash"></span></button>)))
     </div>
 </div>
 
@@ -66,7 +65,7 @@
                             <div class="form-group row">
                                 <label class="col-xs-2 col-form-label">Cliente</label>
                                 <div class="">
-                                    @Html.DropDownList("Clientes", (IEnumerable<SelectListItem>)ViewBag.Clientes, "Seleccione...", new { @class = "combobox", @ID = "modClientes", @Name = "modClientes" })
+                                    @Html.DropDownList("Clientes", (IEnumerable<SelectListItem>)ViewBag.Clientes, "Seleccione...", new { @class = "combobox", @ID = "Clientes", @Name = "Clientes" })
                                 </div>
                             </div>
                         </form>
@@ -113,7 +112,7 @@
                                 <label class="col-xs-2 col-form-label">Usuario</label>
                                 <div class="">
                                     <input type="text" required class="form-control has-feedback-left" id="modUsuario" placeholder="Usuario" />
-                                    <input type="text" style="display:none;" id="IdUsuario" name="IdUsuario" />
+                                    <input type="text" style="display:none;" id="modIdUsuario" name="IdUsuario" />
                                 </div>
                             </div>
                         </form>
@@ -121,7 +120,7 @@
                             <div class="form-group row">
                                 <label class="col-xs-2 col-form-label">Cliente</label>
                                 <div class="">
-                                    @Html.DropDownList("cliente", (IEnumerable<SelectListItem>)ViewBag.Clientes, "Seleccione...", new { @class = "combobox", @ID = "cliente", @Name = "cliente" })
+                                    @Html.DropDownList("modClientes", (IEnumerable<SelectListItem>)ViewBag.Clientes, "Seleccione...", new { @class = "combobox", @ID = "modClientes", @Name = "modClientes" })
                                 </div>
                             </div>
                         </form>
@@ -149,6 +148,3 @@
         </div>
     </div>
 </div>
-
-<script src="~/Content/assets/plugins/danielfarrell/bootstrap-combobox/js/bootstrap-combobox.js"></script>
-

@@ -372,5 +372,44 @@ namespace BLL
             return Listado;
         }
         #endregion
+
+        #region FacturasClientes
+        public List<ObjetoFacturas> GetFacturas(int cliente, string FechaIni, string FechaFin)
+        {
+            var Listado = new List<ObjetoFacturas>();
+            var data = new Conector().EjecutarSP("Web_GetFacturas", new System.Collections.Hashtable()
+            {
+                {"Cliente", cliente},
+                {"FechaIni", String.Format(FechaIni,"yyyy-MM-dd") },
+                {"FechaFin", String.Format(FechaFin,"yyyy-MM-dd") }
+            });
+            if (data.Rows.Count > 0)
+            {
+                for (int i = 0; i < data.Rows.Count; i++)
+                {
+                    var validador = new object();
+                    var dtLista = new ObjetoFacturas();
+
+                    validador = data.Rows[i].Field<object>("Id");
+                    dtLista.Id = validador != null ? data.Rows[i].Field<int>("Id") : -1;
+
+                    validador = data.Rows[i].Field<object>("NroFactura");
+                    dtLista.NroFactura = validador != null ? data.Rows[i].Field<int>("NroFactura") : -1;
+
+                    validador = data.Rows[i].Field<object>("fecha");
+                    dtLista.Fecha = validador != null ? data.Rows[i].Field<DateTime>("fecha") : DateTime.Now;
+
+                    validador = data.Rows[i].Field<object>("Monto");
+                    dtLista.Total = validador != null ? data.Rows[i].Field<int>("Monto") : -1;
+
+                    validador = data.Rows[i].Field<object>("Estado");
+                    dtLista.Estado = validador != null ? data.Rows[i].Field<string>("Estado") : "";
+                    Listado.Add(dtLista);
+                }
+            }
+            return Listado;
+        }
+        #endregion
+
     }
 }

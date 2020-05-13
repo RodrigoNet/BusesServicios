@@ -1,11 +1,10 @@
 ﻿$(document).ready(function(){
-    //$('.combobox').combobox();
 
     document.getElementById("CrearUsuario").onclick = function () {
         
         var usuario = $("#Usuario").val();
         var email = $("#Email").val();
-        var cliente = $("#modClientes").val();
+        var cliente = $("#Clientes").val();
 
         $.ajax({
             type: "POST",
@@ -15,15 +14,6 @@
             success: function (data) {
                 try {
                     if (data > 0) {
-                        //if (!data.Verificador) {
-                        //    $("#modalErrorLoginMensaje").html(data.Mensaje);
-                        //    $("#aModalErrorLogin").click();
-                        //    return;
-                        //}
-                        //else {
-                        //    $("#modalErrorLoginMensaje").html(data.Mensaje);
-                        //    $("#aModalErrorLogin").click();
-                        //}
                         alert("usuario creado");
                         location.reload();
                     }
@@ -80,9 +70,10 @@ function EliminarUsuario(IdUsuario) {
 
 function ModificaUsuario() {
     var Id = $("#modIdUsuario").val();
-    var usuario = $("modUsuario").val();
-    var cliente = $("modClientes").val();
-    var email = $("modEmail").val();
+    var usuario = $("#modUsuario").val();
+    var cliente = $("#modClientes").val();
+    var email = $("#modEmail").val();
+    console.log("modificausuario");
     $.ajax({
         type: "POST",
         url: "ModificarUsuario",
@@ -102,4 +93,5 @@ function ModificaUsuario() {
         }
     });
 }
+
 

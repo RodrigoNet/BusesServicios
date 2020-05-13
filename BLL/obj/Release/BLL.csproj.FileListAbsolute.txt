@@ -10,3 +10,15 @@ C:\Users\RDG\Source\Repos\FttpClientes\BLL\obj\Release\BLL.csproj.CoreCompileInp
 C:\Users\RDG\Source\Repos\FttpClientes\BLL\obj\Release\BLL.csproj.CopyComplete
 C:\Users\RDG\Source\Repos\FttpClientes\BLL\obj\Release\BLL.dll
 C:\Users\RDG\Source\Repos\FttpClientes\BLL\obj\Release\BLL.pdb
+D:\FttpWeb\FttpClientes\BLL\bin\Release\BLL.dll
+D:\FttpWeb\FttpClientes\BLL\bin\Release\BLL.pdb
+D:\FttpWeb\FttpClientes\BLL\bin\Release\DAL.dll
+D:\FttpWeb\FttpClientes\BLL\bin\Release\UTIL.dll
+D:\FttpWeb\FttpClientes\BLL\bin\Release\log4net.dll
+D:\FttpWeb\FttpClientes\BLL\bin\Release\DAL.pdb
+D:\FttpWeb\FttpClientes\BLL\bin\Release\UTIL.pdb
+D:\FttpWeb\FttpClientes\BLL\obj\Release\BLL.csprojAssemblyReference.cache
+D:\FttpWeb\FttpClientes\BLL\obj\Release\BLL.csproj.CoreCompileInputs.cache
+D:\FttpWeb\FttpClientes\BLL\obj\Release\BLL.csproj.CopyComplete
+D:\FttpWeb\FttpClientes\BLL\obj\Release\BLL.dll
+D:\FttpWeb\FttpClientes\BLL\obj\Release\BLL.pdb

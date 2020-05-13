@@ -29,15 +29,17 @@ namespace ServiciosClietnes.Controllers
             if (!string.IsNullOrEmpty(_fechaIni) && !string.IsNullOrEmpty(_fechaFin))
             {
                 var cliente = SessionVariables.Session_Datos_Usuarios.IdEmpresa;
-                var listadoServicios = Acceso.GetServicios(cliente,_fechaIni, _fechaFin);
-                if (listadoServicios != null)
+                var listadoServicios = Acceso.GetServicios(cliente, _fechaIni, _fechaFin);
+                if (listadoServicios.Count>0)
                 {
+                    //listadoServicios = new List<ObjetoServicios>() { listadoServicios[0] };
                     return Json(new { list = listadoServicios }, JsonRequestBehavior.AllowGet);
                 }
                 else
                 {
                     ViewBag.mensaje = 0;
-                    return Json(new { mensaje = ViewBag.mensaje }, JsonRequestBehavior.AllowGet);
+                    return Json(new { list = listadoServicios }, JsonRequestBehavior.AllowGet);
+                    //return Json(new { mensaje = ViewBag.mensaje }, JsonRequestBehavior.AllowGet);
                 }
             }
             else
@@ -89,7 +91,7 @@ namespace ServiciosClietnes.Controllers
                     data = excelPackage.GetAsByteArray();
                 }
             }
-            
+
             catch (Exception ex)
             {
                 throw;
